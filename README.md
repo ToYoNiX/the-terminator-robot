@@ -11,3 +11,4 @@ This is the Terminator, one of the most advanced and complicated sumo robots eve
 * Sensors (Infrared/Ultrasonic)
 * Fan 
 
+# this place is useless, USELESS I SAY
