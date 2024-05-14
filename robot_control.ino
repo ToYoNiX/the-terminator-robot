@@ -8,46 +8,46 @@ License: Remixing or Changing this Thing is allowed. Commercial use is not allow
 #include <WebServer.h>
 
 // Ultrasonic
-class Ultrasonic {
-  private:
-    int trigPin, echoPin;
-  public:
-    Ultrasonic (int t, int e) {
-      trigPin = t, echoPin = e;
-      pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
-      pinMode(echoPin, INPUT); // Sets the echoPin as an Input
-    }
+// class Ultrasonic {
+//   private:
+//     int trigPin, echoPin;
+//   public:
+//     Ultrasonic (int t, int e) {
+//       trigPin = t, echoPin = e;
+//       pinMode(trigPin, OUTPUT); // Sets the trigPin as an Output
+//       pinMode(echoPin, INPUT); // Sets the echoPin as an Input
+//     }
 
-    long distance () {
-      long dis, dur;
-      // Clears the trigPin
-      digitalWrite(trigPin, LOW);
-      delayMicroseconds(2);
+//     long distance () {
+//       long dis, dur;
+//       // Clears the trigPin
+//       digitalWrite(trigPin, LOW);
+//       delayMicroseconds(2);
 
-      // Sets the trigPin on HIGH state for 10 micro seconds
-      digitalWrite(trigPin, HIGH);
-      delayMicroseconds(10);
-      digitalWrite(trigPin, LOW);
+//       // Sets the trigPin on HIGH state for 10 micro seconds
+//       digitalWrite(trigPin, HIGH);
+//       delayMicroseconds(10);
+//       digitalWrite(trigPin, LOW);
 
-      // Reads the echoPin, returns the sound wave travel time in microseconds
-      dur = pulseIn(echoPin, HIGH);
+//       // Reads the echoPin, returns the sound wave travel time in microseconds
+//       dur = pulseIn(echoPin, HIGH);
 
-      // Calculating the distance
-      dis= dur*0.034/2;
+//       // Calculating the distance
+//       dis= dur*0.034/2;
 
-      return dis;
-    }
+//       return dis;
+//     }
 
-    bool isEnemy () {
-      if (this -> distance() <= 70)
-        return true;
+//     bool isEnemy () {
+//       if (this -> distance() <= 70)
+//         return true;
 
-      return false;
-    }
-};
+//       return false;
+//     }
+// };
 
-Ultrasonic ultraFront1(14, 12);
-Ultrasonic ultraFront2(26, 27);
+//Ultrasonic ultraFront1(14, 12);
+//Ultrasonic ultraFront2(26, 27);
 //Ultrasonic ultraRight(23, 22);
 //Ultrasonic ultraLeft(25, 33);
 
