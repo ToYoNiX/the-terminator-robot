@@ -25,7 +25,7 @@ Our sumo robot offers two primary control options:
 * Mobile Application Control: We have developed a custom mobile application specifically designed to interact with the ESP32 via Wi-Fi. This intuitive application allows users to control the robot remotely, providing real-time feedback and control options.
 
 # Media
-[![competition]](https://github.com/ToYoNiX/the-terminator-robot/blob/main/media/video.mp4)
+![Competition](https://github.com/ToYoNiX/the-terminator-robot/blob/main/media/video.mp4)
 
 Feel free to explore the code, documentation, and resources provided in this repository. Your feedback and contributions are greatly appreciated!
 
